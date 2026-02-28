@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3ac3b59a86692fff3299920a25fe175 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a3ac3b59a86692fff3299920a25fe175" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a3ac3b59a86692fff3299920a25fe175 = L.map(
+                "map_a3ac3b59a86692fff3299920a25fe175",
+                {
+                    center: [10.8, 78.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_581b6d80d9e4e36e232b02b77f31e942 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_581b6d80d9e4e36e232b02b77f31e942.addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var circle_d932882e23c5024466ad350efbc69820 = L.circle(
+                [11.14, 79.07],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_d932882e23c5024466ad350efbc69820.bindTooltip(
+                `<div>
+                     Ariyalur: 23.5°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f333feb56641357bfa68e4a1b515d6f5 = L.marker(
+                [11.14, 79.07],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_e4228fc94c887bae4719ab8e46bbaca2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.5\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_f333feb56641357bfa68e4a1b515d6f5.setIcon(div_icon_e4228fc94c887bae4719ab8e46bbaca2);
+            
+    
+            var circle_2e298304de372875f7e46289ef205799 = L.circle(
+                [12.69, 79.97],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_2e298304de372875f7e46289ef205799.bindTooltip(
+                `<div>
+                     Chengalpattu: 23.3°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5144fd2331b9e7d627c4f31d98ab1137 = L.marker(
+                [12.69, 79.97],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_ad81927483959d7de02c98c04893d56a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.3\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_5144fd2331b9e7d627c4f31d98ab1137.setIcon(div_icon_ad81927483959d7de02c98c04893d56a);
+            
+    
+            var circle_84c6c4f741ff4e50e2660b7ad1848d0f = L.circle(
+                [13.08, 80.27],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_84c6c4f741ff4e50e2660b7ad1848d0f.bindTooltip(
+                `<div>
+                     Chennai: 24.9°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4866ff0a792bbf445ba0d152016027ed = L.marker(
+                [13.08, 80.27],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_a3f69a3c6d5e97670a8c37af54f2b116 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.9\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_4866ff0a792bbf445ba0d152016027ed.setIcon(div_icon_a3f69a3c6d5e97670a8c37af54f2b116);
+            
+    
+            var circle_2c6f04d3e81bd7bfc719c92a6edbab70 = L.circle(
+                [11.01, 76.95],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_2c6f04d3e81bd7bfc719c92a6edbab70.bindTooltip(
+                `<div>
+                     Coimbatore: 22.6°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_259f16edbd363c2734ccea5d0d1ed6c7 = L.marker(
+                [11.01, 76.95],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_6b8d78adde8b78d2eef38b377049a7ea = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e22.6\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_259f16edbd363c2734ccea5d0d1ed6c7.setIcon(div_icon_6b8d78adde8b78d2eef38b377049a7ea);
+            
+    
+            var circle_e1aaf9b3de8ecf5be62fc2f1abf3106a = L.circle(
+                [11.74, 79.76],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_e1aaf9b3de8ecf5be62fc2f1abf3106a.bindTooltip(
+                `<div>
+                     Cuddalore: 23.5°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_31c72ea75c95fc2754f91a92d55ce506 = L.marker(
+                [11.74, 79.76],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_81e09fd53262161304bbd76450d1a4d6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.5\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_31c72ea75c95fc2754f91a92d55ce506.setIcon(div_icon_81e09fd53262161304bbd76450d1a4d6);
+            
+    
+            var circle_c6bca7d7cc84a31d93a17072c67101eb = L.circle(
+                [12.13, 78.01],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_c6bca7d7cc84a31d93a17072c67101eb.bindTooltip(
+                `<div>
+                     Dharmapuri: 23.8°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7313437320dc56c29d877bc0fbeef34 = L.marker(
+                [12.13, 78.01],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_0159a336d85772336bb051be42cb3447 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.8\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_d7313437320dc56c29d877bc0fbeef34.setIcon(div_icon_0159a336d85772336bb051be42cb3447);
+            
+    
+            var circle_5944ee331bfa05d1aac36d92b8715ad0 = L.circle(
+                [10.36, 77.98],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_5944ee331bfa05d1aac36d92b8715ad0.bindTooltip(
+                `<div>
+                     Dindigul: 25.4°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_63a8a72890b2ee592d7ad2d44ecef9e2 = L.marker(
+                [10.36, 77.98],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_d2dc38388700fe0ac094aa48bba92b6f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e25.4\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_63a8a72890b2ee592d7ad2d44ecef9e2.setIcon(div_icon_d2dc38388700fe0ac094aa48bba92b6f);
+            
+    
+            var circle_d9b498fa759b7623480c2724410cea65 = L.circle(
+                [11.34, 77.71],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_d9b498fa759b7623480c2724410cea65.bindTooltip(
+                `<div>
+                     Erode: 26.1°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_028d9cfd992a7d6aa6ee7ce882efe255 = L.marker(
+                [11.34, 77.71],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_f5495aee36779f0f852bf844e0e925d7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e26.1\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_028d9cfd992a7d6aa6ee7ce882efe255.setIcon(div_icon_f5495aee36779f0f852bf844e0e925d7);
+            
+    
+            var circle_5272b44468ef0ff2af9893a749ead249 = L.circle(
+                [11.73, 78.96],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_5272b44468ef0ff2af9893a749ead249.bindTooltip(
+                `<div>
+                     Kallakurichi: 24.3°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3fed87baf11f957d7f9202e59fe6e079 = L.marker(
+                [11.73, 78.96],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_ddae5dc6a5d95cb4700162a996a6732d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.3\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_3fed87baf11f957d7f9202e59fe6e079.setIcon(div_icon_ddae5dc6a5d95cb4700162a996a6732d);
+            
+    
+            var circle_05fb4d5c4900a79c270d69cefbfedbd5 = L.circle(
+                [12.83, 79.7],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_05fb4d5c4900a79c270d69cefbfedbd5.bindTooltip(
+                `<div>
+                     Kancheepuram: 23.0°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30e4d4536e14308776b4a1de8cf5f8d6 = L.marker(
+                [12.83, 79.7],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_68bc3d61f4c75d8e6463db7debc29af5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.0\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_30e4d4536e14308776b4a1de8cf5f8d6.setIcon(div_icon_68bc3d61f4c75d8e6463db7debc29af5);
+            
+    
+            var circle_654071d9c5eedd707ca3a766871cc162 = L.circle(
+                [8.08, 77.53],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_654071d9c5eedd707ca3a766871cc162.bindTooltip(
+                `<div>
+                     Kanyakumari: 26.1°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_af0c725eb514d6fdc484161fdb8730a7 = L.marker(
+                [8.08, 77.53],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_e0a7d3654212a9b4e9d722b2efe39661 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e26.1\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_af0c725eb514d6fdc484161fdb8730a7.setIcon(div_icon_e0a7d3654212a9b4e9d722b2efe39661);
+            
+    
+            var circle_703286c1ddb6dcf5f7a2a46e66386321 = L.circle(
+                [10.92, 79.83],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_703286c1ddb6dcf5f7a2a46e66386321.bindTooltip(
+                `<div>
+                     Karaikal: 23.4°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca3a288a329eb4299faa36bb41a8c6a2 = L.marker(
+                [10.92, 79.83],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_a1acb9eed5d330edf2cc7a2c702a15a1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.4\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_ca3a288a329eb4299faa36bb41a8c6a2.setIcon(div_icon_a1acb9eed5d330edf2cc7a2c702a15a1);
+            
+    
+            var circle_b851ec55a27e867dbf669e6a8a566944 = L.circle(
+                [10.96, 78.07],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_b851ec55a27e867dbf669e6a8a566944.bindTooltip(
+                `<div>
+                     Karur: 25.6°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7f6f32f4bde6da924d4dec3637845c4c = L.marker(
+                [10.96, 78.07],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_bcbab837b44ce684c8b1f2d3dd56a95f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e25.6\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_7f6f32f4bde6da924d4dec3637845c4c.setIcon(div_icon_bcbab837b44ce684c8b1f2d3dd56a95f);
+            
+    
+            var circle_970bc8411139d02580f0afe1e2d5ad32 = L.circle(
+                [12.51, 78.21],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_970bc8411139d02580f0afe1e2d5ad32.bindTooltip(
+                `<div>
+                     Krishnagiri: 24.4°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9eb0eb179c037db6048902d06570816b = L.marker(
+                [12.51, 78.21],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_01fd6062e60d60e61ded24d190a4e64f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.4\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_9eb0eb179c037db6048902d06570816b.setIcon(div_icon_01fd6062e60d60e61ded24d190a4e64f);
+            
+    
+            var circle_57f437190908617be1f561bd0e4c39c6 = L.circle(
+                [9.92, 78.11],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_57f437190908617be1f561bd0e4c39c6.bindTooltip(
+                `<div>
+                     Madurai: 24.7°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e5bbc0cbd0620af0d5b4f433ce71664d = L.marker(
+                [9.92, 78.11],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_520fc4e305d4cdb56643a8ff203b4f5c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.7\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_e5bbc0cbd0620af0d5b4f433ce71664d.setIcon(div_icon_520fc4e305d4cdb56643a8ff203b4f5c);
+            
+    
+            var circle_6a89bbe4405711f0ba16ed164037b4e1 = L.circle(
+                [11.1, 79.65],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_6a89bbe4405711f0ba16ed164037b4e1.bindTooltip(
+                `<div>
+                     Mayiladuthurai: 23.0°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f1c59aa06d25fb5cde79837b4b0690c = L.marker(
+                [11.1, 79.65],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_77dc81630af28fcb4009220609a8511e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.0\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_8f1c59aa06d25fb5cde79837b4b0690c.setIcon(div_icon_77dc81630af28fcb4009220609a8511e);
+            
+    
+            var circle_85e898d7282fef78b08139640473f974 = L.circle(
+                [10.76, 79.84],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_85e898d7282fef78b08139640473f974.bindTooltip(
+                `<div>
+                     Nagapattinam: 23.4°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d9c3aaec132e4c9e5699ad41a8b2c170 = L.marker(
+                [10.76, 79.84],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_8c9388829d021cef89068042c2876cdf = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.4\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_d9c3aaec132e4c9e5699ad41a8b2c170.setIcon(div_icon_8c9388829d021cef89068042c2876cdf);
+            
+    
+            var circle_95cb6d0226a78d9708b41cc4ffe17972 = L.circle(
+                [11.22, 78.16],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_95cb6d0226a78d9708b41cc4ffe17972.bindTooltip(
+                `<div>
+                     Namakkal: 25.5°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f8120dd39e17ee60c32bc482ddd87e3e = L.marker(
+                [11.22, 78.16],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_3d575e660925ee10c624c0c812bb6621 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e25.5\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_f8120dd39e17ee60c32bc482ddd87e3e.setIcon(div_icon_3d575e660925ee10c624c0c812bb6621);
+            
+    
+            var circle_7a428d123a65dd639eb04c0ba98333f8 = L.circle(
+                [11.49, 76.73],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_7a428d123a65dd639eb04c0ba98333f8.bindTooltip(
+                `<div>
+                     Nilgiris: 17.0°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_29f33d4dabe148a0caf23f7d23b61d2a = L.marker(
+                [11.49, 76.73],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_8f4248b0f5ef8c694e1824df99d9634c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e17.0\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_29f33d4dabe148a0caf23f7d23b61d2a.setIcon(div_icon_8f4248b0f5ef8c694e1824df99d9634c);
+            
+    
+            var circle_b910303a1f749e5c4e6bf857750d0a09 = L.circle(
+                [11.23, 78.88],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_b910303a1f749e5c4e6bf857750d0a09.bindTooltip(
+                `<div>
+                     Perambalur: 23.9°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1eecf4123dc15e880a5e6cf1343910d1 = L.marker(
+                [11.23, 78.88],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_d35a8e34e9f8007c8ea76a5fd3432f3a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.9\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_1eecf4123dc15e880a5e6cf1343910d1.setIcon(div_icon_d35a8e34e9f8007c8ea76a5fd3432f3a);
+            
+    
+            var circle_a1627daeea707c1b2ff15142b22a529d = L.circle(
+                [11.94, 79.8],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_a1627daeea707c1b2ff15142b22a529d.bindTooltip(
+                `<div>
+                     Puducherry: 23.8°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3ea5e52ac1e3bcfd04f5bd42cffc864d = L.marker(
+                [11.94, 79.8],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_46bd79478a47031425100363a8db43c4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.8\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_3ea5e52ac1e3bcfd04f5bd42cffc864d.setIcon(div_icon_46bd79478a47031425100363a8db43c4);
+            
+    
+            var circle_f5aa5d5580720cecd30616328fa4b2e8 = L.circle(
+                [10.37, 78.82],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_f5aa5d5580720cecd30616328fa4b2e8.bindTooltip(
+                `<div>
+                     Pudukkottai: 23.5°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4ff52e2c6e85e844fb9cd312db42a372 = L.marker(
+                [10.37, 78.82],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_e1ab366902a17ee67ceeed54a9a82e9e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.5\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_4ff52e2c6e85e844fb9cd312db42a372.setIcon(div_icon_e1ab366902a17ee67ceeed54a9a82e9e);
+            
+    
+            var circle_5e1c2f1e60a7284e8a65bf9b61b1daee = L.circle(
+                [9.35, 78.83],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_5e1c2f1e60a7284e8a65bf9b61b1daee.bindTooltip(
+                `<div>
+                     Ramanathapuram: 23.8°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a00fa5790f90aab92878b9149a6074b = L.marker(
+                [9.35, 78.83],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_f605dffad338ec3e0b4497f4a360ca0e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.8\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_8a00fa5790f90aab92878b9149a6074b.setIcon(div_icon_f605dffad338ec3e0b4497f4a360ca0e);
+            
+    
+            var circle_61091e1ae58f9a4d7ff68445aae2e624 = L.circle(
+                [12.94, 79.33],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_61091e1ae58f9a4d7ff68445aae2e624.bindTooltip(
+                `<div>
+                     Ranipet: 22.9°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5ce4bfe6781dac1adea41053d2dfe5b4 = L.marker(
+                [12.94, 79.33],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_0f28b66f6fb1f1d5bcfc2659c392bd00 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e22.9\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_5ce4bfe6781dac1adea41053d2dfe5b4.setIcon(div_icon_0f28b66f6fb1f1d5bcfc2659c392bd00);
+            
+    
+            var circle_8a39648f56ea95922b724ae5e66f5734 = L.circle(
+                [11.66, 78.14],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_8a39648f56ea95922b724ae5e66f5734.bindTooltip(
+                `<div>
+                     Salem: 26.3°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f91837b9ebb836828d809fa7cdce2354 = L.marker(
+                [11.66, 78.14],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_3409f546e25f30226d8eb593e4d64d34 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e26.3\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_f91837b9ebb836828d809fa7cdce2354.setIcon(div_icon_3409f546e25f30226d8eb593e4d64d34);
+            
+    
+            var circle_75126fd4d93096a421df29a1f65b55c7 = L.circle(
+                [9.84, 78.48],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_75126fd4d93096a421df29a1f65b55c7.bindTooltip(
+                `<div>
+                     Sivaganga: 23.7°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_11473322c92bf4efa90557dc3d228c52 = L.marker(
+                [9.84, 78.48],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_648237e9d6a63d8174da1e53db399c03 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.7\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_11473322c92bf4efa90557dc3d228c52.setIcon(div_icon_648237e9d6a63d8174da1e53db399c03);
+            
+    
+            var circle_e42b7dc7b0ce4b07d3da7c47630ab152 = L.circle(
+                [8.95, 77.31],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_e42b7dc7b0ce4b07d3da7c47630ab152.bindTooltip(
+                `<div>
+                     Tenkasi: 24.6°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8990bf4991d144a058c02f134633b45d = L.marker(
+                [8.95, 77.31],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_5b043d62204496a6296b81afe34715a0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.6\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_8990bf4991d144a058c02f134633b45d.setIcon(div_icon_5b043d62204496a6296b81afe34715a0);
+            
+    
+            var circle_6e03742cbfe1eed8d52b3f2fb505ce07 = L.circle(
+                [10.78, 79.13],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_6e03742cbfe1eed8d52b3f2fb505ce07.bindTooltip(
+                `<div>
+                     Thanjavur: 23.0°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ef005b7fd21625f90d1e97e34b4049cd = L.marker(
+                [10.78, 79.13],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_9e542322eabc6361f43cb337237fe952 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.0\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_ef005b7fd21625f90d1e97e34b4049cd.setIcon(div_icon_9e542322eabc6361f43cb337237fe952);
+            
+    
+            var circle_b53ea7bc7b9f758cefb9864f8212f98e = L.circle(
+                [10.01, 77.51],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_b53ea7bc7b9f758cefb9864f8212f98e.bindTooltip(
+                `<div>
+                     Theni: 24.9°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb53227ed89e8682f1365eeea93756a3 = L.marker(
+                [10.01, 77.51],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_2494af3e2b5734ca2f461bf01174dd72 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.9\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_cb53227ed89e8682f1365eeea93756a3.setIcon(div_icon_2494af3e2b5734ca2f461bf01174dd72);
+            
+    
+            var circle_524c6b598fc9d34d3cfcf78cd977343c = L.circle(
+                [8.76, 78.13],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_524c6b598fc9d34d3cfcf78cd977343c.bindTooltip(
+                `<div>
+                     Thoothukudi: 24.7°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_927ece17b20d32183971bbc5f1023ddf = L.marker(
+                [8.76, 78.13],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_8e1fec98ebc4cb6d76a51fec8f4ae32c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.7\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_927ece17b20d32183971bbc5f1023ddf.setIcon(div_icon_8e1fec98ebc4cb6d76a51fec8f4ae32c);
+            
+    
+            var circle_80d4bd0a212048e70a09173d6a2942da = L.circle(
+                [10.79, 78.7],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_80d4bd0a212048e70a09173d6a2942da.bindTooltip(
+                `<div>
+                     Tiruchirappalli: 24.0°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6dadca23c6139ae76a54d0d7fcbfe3f4 = L.marker(
+                [10.79, 78.7],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_28ceae8307adc670f208f39561a59059 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.0\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_6dadca23c6139ae76a54d0d7fcbfe3f4.setIcon(div_icon_28ceae8307adc670f208f39561a59059);
+            
+    
+            var circle_e529f732074f3ac1d4c028c758235172 = L.circle(
+                [8.71, 77.75],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_e529f732074f3ac1d4c028c758235172.bindTooltip(
+                `<div>
+                     Tirunelveli: 25.1°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6bcccb2ee8e449e4ce077f09fe2b75b3 = L.marker(
+                [8.71, 77.75],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_f1246d7d6cab7126b53b7759675f984b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e25.1\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_6bcccb2ee8e449e4ce077f09fe2b75b3.setIcon(div_icon_f1246d7d6cab7126b53b7759675f984b);
+            
+    
+            var circle_5512d93a9f547220f153dfb82f478742 = L.circle(
+                [12.49, 78.55],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_5512d93a9f547220f153dfb82f478742.bindTooltip(
+                `<div>
+                     Tirupathur: 23.8°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a7fb1fb8e8e77005efb9d0aee33f7af = L.marker(
+                [12.49, 78.55],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_2b892e4297d4ecb2b60364ff5f98e613 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.8\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_8a7fb1fb8e8e77005efb9d0aee33f7af.setIcon(div_icon_2b892e4297d4ecb2b60364ff5f98e613);
+            
+    
+            var circle_0db593ba103c182d1f3e2ab20e872a4a = L.circle(
+                [11.1, 77.34],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_0db593ba103c182d1f3e2ab20e872a4a.bindTooltip(
+                `<div>
+                     Tiruppur: 24.7°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_642ff760faa0ce040f75b76693600dd3 = L.marker(
+                [11.1, 77.34],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_ce3daac1f8142976a9add9631c65683d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e24.7\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_642ff760faa0ce040f75b76693600dd3.setIcon(div_icon_ce3daac1f8142976a9add9631c65683d);
+            
+    
+            var circle_b63856a217615212708e4ea6a4f42078 = L.circle(
+                [13.14, 79.9],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_b63856a217615212708e4ea6a4f42078.bindTooltip(
+                `<div>
+                     Tiruvallur: 23.3°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_df0a8f6f9b146c01ff7edbcacfd8206a = L.marker(
+                [13.14, 79.9],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_edcfdb248e8d16b9c52ea16c136164b9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.3\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_df0a8f6f9b146c01ff7edbcacfd8206a.setIcon(div_icon_edcfdb248e8d16b9c52ea16c136164b9);
+            
+    
+            var circle_58e8c8e534a7dcd4eb648df2f19372c0 = L.circle(
+                [12.22, 79.07],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_58e8c8e534a7dcd4eb648df2f19372c0.bindTooltip(
+                `<div>
+                     Tiruvannamalai: 23.4°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7046d9acf3ca1fef3f8895adf3885107 = L.marker(
+                [12.22, 79.07],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_963e3df17495af27df4789d0b41ea1dd = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.4\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_7046d9acf3ca1fef3f8895adf3885107.setIcon(div_icon_963e3df17495af27df4789d0b41ea1dd);
+            
+    
+            var circle_4017e6f65d0b25de71e8fcecfa653c69 = L.circle(
+                [10.77, 79.63],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_4017e6f65d0b25de71e8fcecfa653c69.bindTooltip(
+                `<div>
+                     Tiruvarur: 22.6°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c49a3f74e657d5701ba02557d76b4aa7 = L.marker(
+                [10.77, 79.63],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_a481c28264f2160c4c8bb35fc030416c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e22.6\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_c49a3f74e657d5701ba02557d76b4aa7.setIcon(div_icon_a481c28264f2160c4c8bb35fc030416c);
+            
+    
+            var circle_aebaa5eb74346926123b9a3044cad5bd = L.circle(
+                [12.91, 79.13],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_aebaa5eb74346926123b9a3044cad5bd.bindTooltip(
+                `<div>
+                     Vellore: 22.7°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c223252990aa04785fabb9d0afeee0c5 = L.marker(
+                [12.91, 79.13],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_ef19c391c5f00ec9f45fd1cf6aa18375 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e22.7\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_c223252990aa04785fabb9d0afeee0c5.setIcon(div_icon_ef19c391c5f00ec9f45fd1cf6aa18375);
+            
+    
+            var circle_8af31b4e1a78f3e641a7ecb1d8ef4095 = L.circle(
+                [11.93, 79.49],
+                {"bubblingMouseEvents": true, "color": "#00b894", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b894", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_8af31b4e1a78f3e641a7ecb1d8ef4095.bindTooltip(
+                `<div>
+                     Viluppuram: 23.6°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_904925180f977e8c67a3039b29356867 = L.marker(
+                [11.93, 79.49],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_74a19c90955ae8237f61bd49cefb62b4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e23.6\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_904925180f977e8c67a3039b29356867.setIcon(div_icon_74a19c90955ae8237f61bd49cefb62b4);
+            
+    
+            var circle_c7199e38c2ef3d91b721715a2e98ab94 = L.circle(
+                [9.58, 77.96],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_c7199e38c2ef3d91b721715a2e98ab94.bindTooltip(
+                `<div>
+                     Virudhunagar: 25.1°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a7141f2504c2c55b3a9e440f1224cc8 = L.marker(
+                [9.58, 77.96],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_0c3aaa0c379a41d8f15bdf196bdee177 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e25.1\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_1a7141f2504c2c55b3a9e440f1224cc8.setIcon(div_icon_0c3aaa0c379a41d8f15bdf196bdee177);
+            
+    
+            var circle_429f18a3c6068fc3e508799859eeea07 = L.circle(
+                [7.0, 82.0],
+                {"bubblingMouseEvents": true, "color": "#fdcb6e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdcb6e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 3}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            circle_429f18a3c6068fc3e508799859eeea07.bindTooltip(
+                `<div>
+                     Sri Lanka: 25.5°C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dbd248814315926477ef701df5a998e1 = L.marker(
+                [7.0, 82.0],
+                {
+}
+            ).addTo(map_a3ac3b59a86692fff3299920a25fe175);
+        
+    
+            var div_icon_761d1470196e4d80dabe49c04c77be49 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 10pt; font-weight: bold; color: black; text-align: center; text-shadow: 1px 1px 2px white;\"\u003e25.5\u00b0C\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [75, 10],
+  "className": "empty",
+});
+        
+    
+                marker_dbd248814315926477ef701df5a998e1.setIcon(div_icon_761d1470196e4d80dabe49c04c77be49);
+            
+</script>
+</html>
